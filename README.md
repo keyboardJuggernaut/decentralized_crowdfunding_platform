@@ -47,7 +47,7 @@
 
 ![Home Page image](crowdfunding/static/remix_screen.png)
 
-This project, realized for educational purposes, regards building a decentralized crowdfunding platform based on an ethereum 
+This project, realized for educational purposes, regards building a decentralized crowdfunding platform handled by an ethereum 
 [smart contract](https://ropsten.etherscan.io/address/0x86D219D65452b013912B2af7b2E65E903fa3777d)
 (deployed on Ropsten Testnet) where users can interact with it and create new campaigns, contribute to existing ones and receive special platform tokens (CWD Token) as reward for their actions.
 Moreover, a website, created with a web framework (in this case [Django](https://www.djangoproject.com/)) using Redis and MongoDB, displays events emitted by the smart contract, which are all stored in a Redis database and
