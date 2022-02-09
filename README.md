@@ -6,10 +6,10 @@
     <img src="crowdfunding/static/logo_solidity.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Decentralized Crowdfunding platform</h3>
+  <h3 align="center">Decentralized Crowdfunding Platform</h3>
 
   <p align="center">
-      Dapp project implementing Ethereum Smart Contracts and a Django application to listen to emitted events and periodically store them in a MongoDB
+      Dapp project implementing Ethereum Smart Contracts and a Django application to listen to emitted events periodically stored in a MongoDB
     <br/>
     <!-- <a href=""><strong>Visit the website »</strong></a> -->
   </p>
@@ -47,7 +47,8 @@
 
 ![Home Page image](crowdfunding/static/remix_screen.png)
 
-This project, realized for educational puroposes, regards building a decentralized crowdfunding platform based on an ethereum [smart contract] (https://ropsten.etherscan.io/address/0x86D219D65452b013912B2af7b2E65E903fa3777d)
+This project, realized for educational purposes, regards building a decentralized crowdfunding platform based on an ethereum 
+[smart contract](https://ropsten.etherscan.io/address/0x86D219D65452b013912B2af7b2E65E903fa3777d)
 (deployed on Ropsten Testnet) where users can interact with it and create new campaigns, contribute to existing ones and receive special platform tokens (CWD Token) as reward for their actions.
 Moreover, a website, created with a web framework (in this case [Django](https://www.djangoproject.com/)) using Redis and MongoDB, displays events emitted by the smart contract, which are all stored in a Redis database and
 then periodically stored in MongoDB. 
@@ -100,10 +101,10 @@ Truffle, Ganache, Nodejs (if you need help check software homepages) on your sys
 
 Once you set your environment, to run the server locally you just need to:
 * Initialize the database only one time by executing this command from your prompt (assuming you're in folder project directory (crowdfunding folder): "python manage.py migrate".
-* Activate and connect to a redis server. If you are on windows, open your linux extensions (for instance Ubuntu LTS) and execute the command "redis-server".
+* Activate and connect to a redis server. If you are on windows, open your linux extension (for instance Ubuntu LTS) and execute the command "redis-server".
 * Run on your command prompt "python manage.py runserver" and go to http://127.0.0.1:8000/ on your browser. 
 
-Notes: 
+Notes: <br>
 Contract events are showed when someone interact with it, so if you don't personally want to interact with the contract or wait for, open an other terminal and execute the
 "tests.py" file in django project (path: crowdfunding/events/) by executing "python events.py". It will simulate an interaction with the smart contract and you will be able to see
 the emitted events from the website.
