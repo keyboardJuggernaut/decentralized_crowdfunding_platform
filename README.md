@@ -9,7 +9,7 @@
   <h3 align="center">Decentralized Crowdfunding Platform</h3>
 
   <p align="center">
-      Dapp project implementing Ethereum Smart Contracts and a Django application to listen to emitted events periodically stored in a MongoDB
+      Dapp project implementing Ethereum Smart Contracts, a Django application to listen to emitted events periodically stored in a MongoDB and to interact with the Smart     Contracts using web3js and MetaMask
     <br/>
     <!-- <a href=""><strong>Visit the website »</strong></a> -->
   </p>
@@ -50,8 +50,7 @@
 This project, realized for educational purposes, regards building a decentralized crowdfunding platform handled by an ethereum 
 [smart contract](https://ropsten.etherscan.io/address/0x86D219D65452b013912B2af7b2E65E903fa3777d)
 (deployed on Ropsten Testnet) where users can interact with it and create new campaigns, contribute to existing ones and receive special platform tokens (CWD Token) as reward for their actions.
-Moreover, a website, created with a web framework (in this case [Django](https://www.djangoproject.com/)) using Redis and MongoDB, displays events emitted by the smart contract, which are all stored in a Redis database and
-then periodically stored in MongoDB. 
+Moreover, a website, created with a web framework (in this case [Django](https://www.djangoproject.com/)) using Redis and MongoDB, displays events emitted by the smart contract, which are all stored in a Redis database and then periodically stored in MongoDB. Finally it is possible to interact with the smart contract to create or contribute to a campaign using MetaMask as wallet and provider.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -69,6 +68,8 @@ then periodically stored in MongoDB.
 * [Django](https://www.djangoproject.com/)
 * [MongoDB](https://www.mongodb.com/)
 * [Redis](https://redis.io/)
+* [Web3.js](https://web3js.readthedocs.io/en/v1.7.0/)
+* [Web3.py](https://web3py.readthedocs.io/en/stable/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -80,7 +81,7 @@ These simple instructions will help you to set your environment and try my proje
 
 ### Prerequisites
 
-This project assumes you have already installed [Python](https://www.python.org/downloads/) (at least 3.9.9 version), [Redis](https://redis.io/download) (at least 6.2.6 version), MongoDB (in case you need help check this [guide](https://www.html.it/pag/52332/installazione-2/)),
+This project assumes you have already installed [Python](https://www.python.org/downloads/) (at least 3.9.9 version), [Redis](https://redis.io/download) (at least 6.2.6 version), MongoDB (in case you need help check this [guide](https://www.html.it/pag/52332/installazione-2/)), [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) with Ropsten Testnet and an account registered as browser extension,
 Truffle, Ganache, Nodejs (if you need help check software homepages) on your system.
 
 ### Installation
